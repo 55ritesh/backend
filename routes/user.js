@@ -32,7 +32,6 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
-// delete the user 
 //DELETE
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
