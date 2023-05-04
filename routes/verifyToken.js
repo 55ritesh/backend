@@ -23,6 +23,8 @@ const verifyToken = (req, res, next) => {
   }
 };
 
+// this is middleware for verification
+
 const verifyTokenAndAuthorization = (req, res, next) => {
   console.log("heloo",req.headers.token);
   verifyToken(req, res, () => {
